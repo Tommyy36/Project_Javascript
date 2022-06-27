@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: #b92b27;  
+    background: -webkit-linear-gradient(to right, #1565C0, #b92b27); 
+    background: linear-gradient(to right, #1565C0, #b92b27); 
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p > span {
+   color: #000000c4;
+   font-size: 30px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   cursor: pointer;
+}
+
+p > span:hover {
+    text-transform: uppercase;
+    text-decoration: underline rgb(206, 4, 4);
+}
+
+
+.currency-container {
+    border: 2px solid #111;
+    display: flex;
+    justify-content: space-between;
+}
+
+input:focus {
+    border: 2px solid blue;
+    background-color: #e1e1e1;
+}
+
+select:focus {
+    border: 2px solid blue;
+}
+
+/* First Container */
+
+.first-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-container > input {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.first-container > select {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    padding: 10px 20px 10px 10px;
+    cursor: pointer;
+}
+
+/* BTN */
+
+.switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    padding: 10px 15px;
+    background-color: rgba(139, 225, 11, 0.836);
+    text-transform: uppercase;
+    color: #111;
+    border: 1px solid #111;
+    border-radius: 8%;
+    box-shadow: 0 0 2px 2px rgb(32, 30, 30);
+    cursor: pointer;
+}
+
+/* Second container */
+
+.second-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-container > input {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 60px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.second-container > select {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 60px;
+    padding: 10px 20px 10px 10px;
+    cursor: pointer;
+}
+
+/* Last value */
+
+#last-value {
+    color: rgb(0, 255, 0);
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(17, 17, 17, 0.2);
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#error {
+    background-color: #b92b27;
+    color: #e1e1e1;
+    padding: 15px 15px;
+    animation-duration: 5s;
+    animation-name: error;
+}
+
+@keyframes error {
+
+    from {
+        color: #111;
+        position: relative;
+        right: 200px;
+    }
+
+    to {
+        position: relative;
+        right: 0px;
+    }
+}
